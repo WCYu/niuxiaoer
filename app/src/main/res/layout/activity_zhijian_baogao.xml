@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:orientation="vertical"
+    tools:context="com.rxjy.niuxiaoer.ProjectInfoActivity">
+
+    <include layout="@layout/include_header_layout" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="278px"
+        android:background="@mipmap/xiangmuxinxibackgro"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginTop="24px"
+            android:gravity="center_horizontal"
+            android:text="评估价格"
+            android:textColor="@color/colorWhite"
+            android:textSize="22px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_zjbg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="70px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="636px"
+                android:layout_height="73px"
+                android:background="@mipmap/xinxishenhe" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_xmbg_buhegecount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_marginTop="2px"
+            android:layout_width="8px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10px"
+            android:layout_marginStart="24px"
+            android:src="@mipmap/biaotishuxian" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="28px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="不合格"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_xmbg_buhegecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginEnd="20px"
+            android:layout_marginTop="28px"
+            android:gravity="center_vertical"
+            android:text="12项"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_zjbg_buhege"
+            android:layout_width="29px"
+            android:layout_height="15px"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="24px"
+            android:src="@mipmap/xiala" />
+
+
+    </LinearLayout>
+
+    <com.rxjy.niuxiaoer.widget.Mylistview
+        android:visibility="gone"
+        android:id="@+id/lv_zjbg_buhege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rxjy.niuxiaoer.widget.Mylistview>
+
+    <LinearLayout
+        android:id="@+id/ll_xmbg_hegecount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="3px"
+            android:layout_width="8px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10px"
+            android:layout_marginStart="24px"
+            android:src="@mipmap/biaotishuxian" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="28px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="合格"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_xmbg_hegecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24px"
+            android:layout_marginEnd="20px"
+            android:layout_marginTop="28px"
+            android:gravity="center_vertical"
+            android:text="12项"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_zjbg_hege"
+            android:layout_width="29px"
+            android:layout_height="15px"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="24px"
+            android:src="@mipmap/xiala" />
+
+
+    </LinearLayout>
+
+    <com.rxjy.niuxiaoer.widget.Mylistview
+        android:visibility="gone"
+        android:id="@+id/lv_zjbg_hege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rxjy.niuxiaoer.widget.Mylistview>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="15px"
+            android:layout_width="8px"
+            android:layout_height="30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10px"
+            android:layout_marginStart="24px"
+            android:src="@mipmap/biaotishuxian" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="我们的保障"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="24px"
+            android:src="@mipmap/ershisi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10px"
+            android:text="24小时审核"
+            android:textColor="#898989"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="24px"
+            android:src="@mipmap/sanshiliu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10px"
+            android:text="36小时付款"
+            android:textColor="#898989"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="24px"
+            android:src="@mipmap/yinsi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10px"
+            android:text="绝对隐私保护"
+            android:textColor="#898989"
+            android:textSize="24px" />
+
+    </LinearLayout>
+    </LinearLayout> </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+        <TextView
+            android:id="@+id/tv_bottom_zuizhongjine"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@drawable/selector_btn_sub"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:text="最终金额￥0"
+            android:textColor="@color/colorWhite"
+            android:textSize="30px"/>
+
+
+    </LinearLayout>
+</LinearLayout>

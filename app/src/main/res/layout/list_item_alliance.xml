@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.rxjy.niuxiaoer.widget.CircleImageView
+                android:id="@+id/civ_list_item_alliance_header"
+                android:layout_width="82px"
+                android:layout_height="82px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/head_portrait_icon" />
+
+            <TextView
+                android:id="@+id/tv_list_item_alliance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="26px"
+                android:layout_toRightOf="@+id/civ_list_item_alliance_header"
+                android:text="王小二"
+                android:textColor="@color/colorBlackLight"
+                android:textSize="@dimen/text_size_l" />
+
+            <TextView
+                android:id="@+id/tv_list_item_alliance_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_list_item_alliance_name"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/civ_list_item_alliance_header"
+                android:text="已加入联盟30天"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/text_size_s" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_list_item_alliance_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:id="@+id/tv_list_item_alliance_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="¥ 1000"
+            android:textColor="@color/colorRedLight"
+            android:textSize="@dimen/text_size_l" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

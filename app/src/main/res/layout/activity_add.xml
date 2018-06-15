@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rxjy.niuxiaoer.activity.AddActivity">
+
+    <include layout="@layout/include_header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="15px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_client_name"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/client_name"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_client_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/tv_client_name"
+                    android:background="@null"
+                    android:hint="@string/insert_client_name"
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_client_name_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_phone_hm"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/phone_hm"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_phone_hm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_phone_hm"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:hint="@string/insert_phone_hm"
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_phone_hm_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/company_name"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_company_name"
+                    android:background="@null"
+                    android:hint="@string/insert_company_name"
+
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_company_name_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_area_mj"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/area_mj"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_area_mj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_area_mj"
+                    android:background="@null"
+                    android:hint="@string/insert_area_mj"
+
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_area_mj_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/address"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_address"
+                    android:background="@null"
+                    android:hint="@string/insert_address"
+
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_address_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_fengongsi"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 分 公 司"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_fengongsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_fengongsi"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_fengongsi_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_client_type"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/client_type"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_client_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_client_type"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:text="请选择"
+
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_client_type_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_home_status"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_status"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <RadioGroup
+                    android:id="@+id/rg_home_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_home_status"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_home_status_yd"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="28px"
+                        android:background="@drawable/selector_radio_button_spec"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="已定"
+                        android:textColor="@color/shape_radio_button_spec"
+                        android:textSize="30px"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_home_status_wd"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector_radio_button_spec"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="未定"
+                        android:textColor="@color/shape_radio_button_spec"
+                        android:textSize="30px" />
+
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_home_status_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_combo_check"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/combo_check"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <RadioGroup
+                    android:id="@+id/rg_combo_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_combo_check"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_combo_check_tc1"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="28px"
+                        android:background="@drawable/selector_radio_button_spec"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="套餐一:"
+                        android:textColor="@color/shape_radio_button_spec"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_combo_check_tc2"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="28px"
+                        android:background="@drawable/selector_radio_button_spec"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="套餐二:"
+                        android:textColor="@color/shape_radio_button_spec"
+                        android:textSize="30px"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_combo_check_tc3"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/selector_radio_button_spec"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="套餐三:"
+                        android:textColor="@color/shape_radio_button_spec"
+                        android:textSize="30px"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_combo_check_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/measure_room_award"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <TextView
+                    android:id="@+id/tv_taocancheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_l" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="130px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/remark"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/text_size_l" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_remark"
+                    android:background="@null"
+                    android:hint="@string/insert_remark"
+                    android:textColor="@color/colorBlackLight"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/text_size_l" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_remark_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/selector_input_line"
+                android:enabled="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/btn_sava"
+                    android:layout_width="0dp"
+                    android:layout_height="80px"
+                    android:layout_marginRight="24px"
+                    android:layout_marginTop="24px"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_sub"
+                    android:gravity="center"
+                    android:text="保存"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="34px" />
+
+                <Button
+                    android:id="@+id/btn_savasubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="80px"
+                    android:layout_marginTop="24px"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_sub"
+                    android:gravity="center"
+                    android:text="@string/savesubmit"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="34px" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

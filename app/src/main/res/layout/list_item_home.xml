@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="24px">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<View-->
+                <!--android:id="@+id/v_list_item_home"-->
+                <!--android:layout_width="10px"-->
+                <!--android:layout_height="30px"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@color/colorPrimary" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_home_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="8px"-->
+                <!--android:layout_toRightOf="@id/v_list_item_home"-->
+                <!--android:text="王小二"-->
+                <!--android:textColor="@color/colorBlackLight"-->
+                <!--android:textSize="@dimen/text_size_l" />-->
+            <!--<ImageView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/iv_phone_icon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@+id/tv_list_item_home_name"-->
+                <!--android:src="@drawable/selector_call"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_home_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="2017-01-11 13:00"-->
+                <!--android:textColor="@color/colorGrayDark"-->
+                <!--android:textSize="@dimen/text_size_s" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="22px"-->
+                <!--android:layout_height="22px"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="4px"-->
+                <!--android:layout_toLeftOf="@id/tv_list_item_home_time"-->
+                <!--android:src="@mipmap/time_icon" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20px">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_home_serial_number"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="18px"-->
+                <!--android:text="@string/serial_number"-->
+                <!--android:textColor="@color/colorGrayDark"-->
+                <!--android:textSize="@dimen/text_size_s" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_home_order_no"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@id/tv_list_item_home_serial_number"-->
+                <!--android:text="12-456511"-->
+                <!--android:textColor="@color/colorGrayDark"-->
+                <!--android:textSize="@dimen/text_size_s" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_home_status"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@color/colorOrange"-->
+                <!--android:paddingBottom="4px"-->
+                <!--android:paddingLeft="10px"-->
+                <!--android:paddingRight="10px"-->
+                <!--android:paddingTop="4px"-->
+                <!--android:text="已签"-->
+                <!--android:layout_marginRight="4px"-->
+                <!--android:layout_marginTop="4px"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="@dimen/text_size_s" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_list_item_point_status"-->
+                <!--android:layout_width="16px"-->
+                <!--android:layout_height="16px"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@drawable/shape_tip"-->
+                <!--android:visibility="invisible" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="4px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20px"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@mipmap/jiben"/>
+        <TextView
+            android:layout_marginStart="15px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:text="基本"/>
+        <TextView
+            android:id="@+id/tv_home_jiben"
+            android:layout_marginStart="40px"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="22px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#898989"
+            android:text="新月茶楼"/>
+        <TextView
+            android:id="@+id/tv_home_status"
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="22px"
+            android:layout_marginEnd="20px"
+            android:textSize="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e60012"
+            android:text="未提交"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="2px"
+            android:layout_marginStart="20px"
+            android:layout_marginBottom="22px"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@mipmap/kehu"/>
+        <TextView
+            android:layout_marginStart="15px"
+            android:layout_marginBottom="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:text="客户"/>
+        <TextView
+            android:id="@+id/tv_home_kehu"
+            android:layout_marginStart="40px"
+            android:layout_marginBottom="22px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#898989"
+            android:text="设计"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="22px"
+            android:layout_marginEnd="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e60012"
+            android:text="未提交"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="2px"
+            android:layout_marginStart="20px"
+            android:layout_marginBottom="22px"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@mipmap/fangyuan"/>
+        <TextView
+            android:layout_marginStart="15px"
+            android:layout_marginBottom="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:text="房源"/>
+        <TextView
+            android:id="@+id/tv_home_fangyuan"
+            android:layout_marginStart="40px"
+            android:layout_marginBottom="22px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#898989"
+            android:text="精装房"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="22px"
+            android:layout_marginEnd="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e60012"
+            android:text="未提交"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="2px"
+            android:layout_marginStart="20px"
+            android:layout_marginBottom="22px"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@mipmap/xuqiu"/>
+        <TextView
+            android:layout_marginStart="15px"
+            android:layout_marginBottom="22px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:text="需求"/>
+        <TextView
+            android:id="@+id/tv_home_xuqiu"
+            android:layout_marginStart="40px"
+            android:layout_marginBottom="22px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#898989"
+            android:text="2个月"/>
+        <TextView
+            android:id="@+id/tv_home_date"
+            android:layout_marginBottom="22px"
+            android:layout_marginEnd="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9fa0a0"
+            android:textSize="28px"
+            android:text="2017-06-07"/>
+    </LinearLayout>
+
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20px"
+        android:layout_marginEnd="20px"
+        android:layout_height="1px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_home_money"
+            android:layout_marginTop="22px"
+            android:layout_marginStart="20px"
+            android:layout_marginBottom="22px"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#f8701b"
+            android:text="￥2000"/>
+
+
+        <TextView
+            android:id="@+id/tv_danhao"
+            android:layout_marginEnd="20px"
+            android:layout_marginStart="10px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#9fa0a0"
+            android:textSize="28px"
+            android:layout_gravity="center_vertical"
+            android:text=""/>
+
+
+        <ImageView
+            android:id="@+id/iv_home_status"
+            android:layout_marginTop="24px"
+            android:layout_marginEnd="20px"
+            android:layout_marginBottom="22px"
+            android:layout_width="90px"
+            android:layout_height="32px"
+            android:src="@mipmap/chongxinxunjia"/>
+    </LinearLayout>
+    <TextView
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15px"
+        android:background="@color/colorBG"/>
+
+</LinearLayout>

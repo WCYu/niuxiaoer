@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBG"
+    tools:context="com.rxjy.niuxiaoer.ProjectInfoActivity">
+    <include layout="@layout/include_header_layout" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="393px"
+        android:background="@mipmap/yujijiagebackgro"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginTop="24px"
+            android:gravity="center_horizontal"
+            android:text="评估价格"
+            android:textColor="@color/colorWhite"
+            android:textSize="22px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_zjbg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="70px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginEnd="30px"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_pinggujiage"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_marginStart="40px"
+                android:layout_width="20px"
+                android:layout_height="26px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:src="@mipmap/dingwei"
+                android:layout_marginEnd="5px"/>
+
+            <TextView
+                android:layout_marginStart="5px"
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="北京"
+                android:textColor="#fdcbad"
+                android:textSize="22px" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chongxinxunjia"
+                android:layout_marginStart="30px"
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_pinggujiage"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_marginStart="20px"
+                    android:layout_width="20px"
+                    android:layout_height="26px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"
+                    android:src="@mipmap/xunjia"
+                    android:layout_marginEnd="5px"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5px"
+                    android:text="重新询价"
+                    android:textColor="#fdcbad"
+                    android:textSize="22px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="18px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:textColor="#fdcbad"
+            android:text="19点之前下单，最快明天完成交易"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="636px"
+                android:layout_height="73px"
+                android:background="@mipmap/huoqubaojiabackgro" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginStart="24px"
+                android:layout_marginEnd="10px"
+                android:layout_gravity="center_vertical"
+                android:layout_width="8px"
+                android:layout_height="30px"
+                android:src="@mipmap/biaotishuxian"/>
+            <TextView
+                android:layout_marginTop="28px"
+                android:layout_marginBottom="24px"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:gravity="center_vertical"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+            <LinearLayout
+                android:id="@+id/ll_xmxx_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40px"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:text="1.提交量房前需要做什么？"
+                    android:textSize="24px"/>
+
+                <ImageView
+                    android:id="@+id/iv_xmxx_one"
+                    android:layout_marginEnd="24px"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_width="29px"
+                    android:layout_height="15px"
+                    android:src="@mipmap/xiala"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_xmxx_one"
+                android:layout_marginEnd="10px"
+                android:layout_marginStart="40px"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="解答： 1.确认客户近期真的有装修需求。
+              2.确认客户信息是否都已完善，信息完善越多，奖励越高哦！"
+                android:textSize="24px"/>
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c9caca"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+            <LinearLayout
+                android:id="@+id/ll_xmxx_two"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_marginStart="40px"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:text="2.我提交量房的预估价是不是最终成交价？"
+                    android:textSize="24px"/>
+
+                <ImageView
+                    android:id="@+id/iv_xmxx_two"
+                    android:layout_marginEnd="24px"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_width="29px"
+                    android:layout_height="15px"
+                    android:src="@mipmap/xiala"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_xmxx_two"
+                android:layout_marginEnd="10px"
+                android:layout_marginStart="40px"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="解答：预估价是系统根据您提交的信息数量匹配的价格，实际量房过程中我们会根据您的信息真实度出一份对比报告确认最终价格。信息只要不是错误的离谱，一般都予以通过。"
+                android:textSize="24px"/>
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c9caca"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+            <LinearLayout
+                android:id="@+id/ll_xmxx_three"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40px"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:text="3.提交量房后审批需要多长时间？"
+                    android:textSize="24px"/>
+
+                <ImageView
+                    android:id="@+id/iv_xmxx_three"
+                    android:layout_marginEnd="24px"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_width="29px"
+                    android:layout_height="15px"
+                    android:src="@mipmap/xiala"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_xmxx_three"
+                android:layout_marginEnd="10px"
+                android:layout_marginStart="40px"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="解答：您在提交量房后，我们会在24小时内对接客户，确认量房时间，派设计师现场量房量房后，24小时内出信息质检报告，并将对应的奖励发放至您在app内版绑定的银行卡（节假日或休息时间稍有延迟）"
+                android:textSize="24px"/>
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c9caca"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+            <LinearLayout
+                android:id="@+id/ll_xmxx_four"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="40px"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:text="4.如何查看到账进度"
+                    android:textSize="24px"/>
+
+                <ImageView
+                    android:id="@+id/iv_xmxx_four"
+                    android:layout_marginEnd="24px"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_width="29px"
+                    android:layout_height="15px"
+                    android:src="@mipmap/xiala"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_xmxx_four"
+                android:layout_marginEnd="10px"
+                android:layout_marginStart="40px"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 解答：当您的客户订单状态变为已完成时，证明我们的财务已向您的银行账户发起一条奖励发放24小时内APP的“钱包”会记录一条量房奖励，于此同时请注意查收银行卡是否到账。注：出纳繁忙可能会有延迟，请耐心等待，app有记录但银行为到账超时2天的请及时联系工作人员"
+                android:textSize="24px"/>
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c9caca"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_marginStart="24px"
+            android:layout_marginEnd="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="8px"
+            android:layout_height="30px"
+            android:src="@mipmap/biaotishuxian"/>
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我们的保障"
+            android:gravity="center_vertical"
+            android:textSize="30px" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@mipmap/ershisi"
+            />
+        <TextView
+            android:layout_marginStart="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898989"
+            android:textSize="24px"
+            android:text="24小时审核"/>
+
+        <ImageView
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@mipmap/sanshiliu"
+            />
+        <TextView
+            android:layout_marginStart="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898989"
+            android:textSize="24px"
+            android:text="36小时付款"/>
+        <ImageView
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_marginStart="50px"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@mipmap/yinsi"
+            />
+        <TextView
+            android:layout_marginStart="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898989"
+            android:textSize="24px"
+            android:text="绝对隐私保护"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

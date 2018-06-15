@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="420px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <ImageView
+            android:layout_width="192px"
+            android:layout_height="56px"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="24px"
+            android:src="@mipmap/niuxiaoertubiao" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginStart="20px"
+        android:layout_marginEnd="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textColor="#898989"
+        android:gravity="center"
+        android:text="您好，经过质检团队的查验，您的信息已经提交，请您再次使用。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="24px"
+        android:layout_marginBottom="24px"
+        android:background="#898989"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="预计获得奖金"/>
+        <TextView
+            android:id="@+id/tv_yujijine"
+            android:layout_marginStart="24px"
+            android:layout_marginEnd="24px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="￥1500"
+            android:gravity="end"
+            android:textColor="#fe853c"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="15px"
+        android:layout_marginTop="15px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="实际获得奖金"/>
+        <TextView
+            android:id="@+id/tv_shijijine"
+            android:layout_marginStart="24px"
+            android:layout_marginEnd="24px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="￥1500"
+            android:gravity="end"
+            android:textColor="#e60012"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+</LinearLayout>

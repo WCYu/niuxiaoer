@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header_search_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@mipmap/gundongback">
+
+
+    <com.taobao.library.VerticalBannerView
+        android:layout_gravity="center_vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        app:animDuration="900"
+        app:gap="2000"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/lv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </com.baoyz.swipemenulistview.SwipeMenuListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_add"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:src="@mipmap/home_notinfo" />
+
+            <Button
+                android:id="@+id/btn_home_add"
+                android:layout_width="350px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60px"
+                android:layout_marginTop="24px"
+                android:background="@drawable/selector_btn_sub"
+                android:gravity="center"
+                android:text="新增"
+                android:textColor="@color/colorWhite"
+                android:textSize="34px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

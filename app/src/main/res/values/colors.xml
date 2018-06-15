@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe853c</color>
+    <color name="colorPrimaryDark">#f8701b</color>
+    <color name="colorAccent">#fe853c</color>
+    <color name="white">#ffffff</color>
+    <color name="iv_selector">#66000000</color>
+
+    <color name="colorWhite">#fff</color>
+
+    <color name="colorBG">#f4f3f9</color>
+
+    <color name="fill_color">#dfdbdb</color>
+
+    <color name="colorLine">#dcdcdc</color>
+
+    <color name="colorGrayLight">#c9c9c9</color>
+
+    <color name="colorGray">#c9caca</color>
+
+    <color name="colorGrayDark">#727171</color>
+
+    <color name="colorBlackLight">#595757</color>
+
+    <color name="colorBlueLight">#67bbef</color>
+
+    <color name="colorGreen">#39d27f</color>
+
+    <color name="colorOrange">#ffb951</color>
+
+    <color name="colorRedLight">#ef434f</color>
+
+    <color name="colorRed">#f00</color>
+
+    <color name="corddd">#ddd</color>
+
+    <color name="cora9a9a9">#a9a9a9</color>
+
+    <color name="cor666">#666</color>
+
+    <color name="cor888">#888</color>
+
+    <color name="cor898989">#898989</color>
+
+    <color name="cor333">#333</color>
+
+    <color name="cor00a0ea">#00a0ea</color>
+
+    <color name="cor2196f3">#2196f3</color>
+
+    <color name="cor0186b7">#0186b7</color>
+
+    <color name="cor4d5f7e">#4d5f7e</color>
+
+    <color name="text_red">#e60012</color>
+
+</resources>

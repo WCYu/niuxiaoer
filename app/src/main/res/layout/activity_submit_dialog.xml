@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="559px"
+    android:layout_height="392px"
+    android:background="@drawable/shape_submit_kehu"
+    tools:context="com.rxjy.niuxiaoer.activity.SubmitDialogActivity">
+
+    <LinearLayout
+        android:layout_marginStart="20px"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@mipmap/tishi"/>
+        <TextView
+            android:layout_marginStart="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#595757"
+            android:textSize="26px"
+            android:text="提交客户信息"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/shape_edittext_bk"
+        android:layout_marginStart="30px"
+        android:layout_marginEnd="30px"
+        android:layout_marginTop="42px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="10px"
+            android:layout_marginEnd="10px"
+            android:layout_marginTop="14px"
+            android:layout_marginBottom="14px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#595757"
+            android:textSize="28px"
+            android:text="客户尊称"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="请输入姓名"
+            android:layout_marginEnd="10px"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:textColorHint="#c9caca"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30px"
+        android:layout_marginStart="30px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_edittext_bk">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10px"
+            android:layout_marginEnd="10px"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:text="客户电话"
+            android:textColor="#595757"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10px"
+            android:inputType="number"
+            android:maxLength="11"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入电话"
+            android:textColor="#595757"
+            android:textColorHint="#c9caca"
+            android:textSize="28px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="28px"
+        android:layout_marginBottom="28px"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="559px"
+        android:layout_height="wrap_content"
+        android:text="请尽快录入客户，晚一步就被别人录入啦！"
+        android:textColor="#e60012"
+        android:textSize="22px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c9caca"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tiaoguo"
+            android:layout_width="0px"
+            android:layout_height="68px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_tiaoguo"
+            android:text="跳过"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="28px" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0px"
+            android:layout_height="68px"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_sub"
+            android:text="确认"
+            android:textColor="@color/colorWhite"
+            android:textSize="28px" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

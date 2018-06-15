@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBG"
+    tools:context="com.rxjy.niuxiaoer.fragment.NewOneFragment">
+
+
+    <LinearLayout
+
+        android:background="@drawable/shape_partadd_kuang"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_width="702px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:layout_marginEnd="20px"
+            android:layout_marginStart="20px"
+            android:text="身份"/>
+
+        <TextView
+            android:id="@+id/tv_partadd_shenfen"
+            android:layout_width="0px"
+            android:layout_height="88px"
+            android:layout_marginStart="40px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择"
+            android:textColor="#595757"
+            android:textColorHint="#c9caca"
+            android:textSize="28px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/shape_partadd_kuang"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_width="702px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:layout_marginEnd="20px"
+            android:layout_marginStart="20px"
+            android:text="年龄"/>
+        <LinearLayout
+
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="88px">
+            <TextView
+                android:id="@+id/tv_partadd_nianling"
+                android:gravity="center_vertical"
+                android:layout_marginStart="40px"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="88px"
+                android:textSize="28px"
+                android:textColor="#c9caca"
+                android:text="请选择"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:background="@drawable/shape_partadd_kuang"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10px"-->
+        <!--android:layout_width="702px"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="28px"-->
+            <!--android:textColor="#595757"-->
+            <!--android:layout_marginEnd="20px"-->
+            <!--android:layout_marginStart="20px"-->
+            <!--android:text="称谓"/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/et_partadd_chengwei"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginStart="40px"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:layout_height="88px"-->
+            <!--android:textSize="28px"-->
+            <!--android:textColor="#595757"-->
+            <!--android:textColorHint="#c9caca"-->
+            <!--android:hint="请输入客户称谓"/>-->
+
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:background="@drawable/shape_partadd_kuang"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_width="702px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:layout_marginEnd="20px"
+            android:layout_marginStart="20px"
+            android:text="微信"/>
+        <EditText
+            android:id="@+id/et_partadd_weixin"
+            android:gravity="center_vertical"
+            android:layout_marginStart="40px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_height="88px"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:textColorHint="#c9caca"
+            android:hint="请输入客户微信"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/shape_partadd_kuang"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_width="702px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="#595757"
+            android:layout_marginEnd="20px"
+            android:layout_marginStart="20px"
+            android:text="注重"/>
+
+        <TextView
+            android:id="@+id/tv_partadd_zhuzhong"
+            android:layout_width="0px"
+            android:layout_height="88px"
+            android:layout_marginStart="40px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请选择"
+            android:textColor="#595757"
+            android:textColorHint="#c9caca"
+            android:textSize="28px" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_baocun"
+        android:layout_width="556px"
+        android:layout_height="82px"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/selector_btn_sub"
+        android:text="下一步"
+        android:textColor="@color/colorWhite"
+        android:textSize="34px"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/rl_forget_password"
+        android:layout_alignParentStart="true" />
+
+
+</LinearLayout>

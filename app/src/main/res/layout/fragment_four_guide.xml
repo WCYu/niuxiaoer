@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/guide_insert"
+             tools:context="com.rxjy.niuxiaoer.fragment.GuideFourFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/yindaoye4"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_yindaoye_insert"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:text="点击进入"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_l"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="right|top"
+        android:layout_marginEnd="24px"
+        android:layout_marginTop="24px"/>
+</FrameLayout>

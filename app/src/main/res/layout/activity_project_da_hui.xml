@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBG"
+    tools:context="com.rxjy.niuxiaoer.ProjectInfoActivity">
+    <include layout="@layout/include_header_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:orientation="vertical"
+        android:background="@mipmap/xiangmuxinxibackgro">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评估价格"
+            android:textColor="@color/colorWhite"
+            android:textSize="22px"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="26px"/>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="50px"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_xmdh_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="70px"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ll_chongxinxunjia"
+            android:layout_marginTop="20px"
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_pinggujiage"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_marginStart="20px"
+                android:layout_width="20px"
+                android:layout_height="26px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:src="@mipmap/xunjia"
+                android:layout_marginEnd="5px"/>
+
+            <TextView
+                android:layout_marginStart="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="重新询价"
+                android:textColor="#fdcbad"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24px"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="636px"
+                android:layout_height="73px"
+                android:background="@mipmap/dahuiback"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="24px"
+            android:layout_marginEnd="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="8px"
+            android:layout_height="30px"
+            android:src="@mipmap/biaotishuxian"/>
+        <TextView
+            android:layout_marginTop="28px"
+            android:layout_marginBottom="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打回原因"
+            android:textSize="30px" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginStart="24px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c9caca"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/tv_xmdh_dahuiyuanyin"
+        android:layout_marginTop="20px"
+        android:layout_marginStart="40px"
+        android:layout_marginEnd="30px"
+        android:layout_marginBottom="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:textColor="#898989"
+        android:text="原因"/>
+    </LinearLayout>
+</LinearLayout>
